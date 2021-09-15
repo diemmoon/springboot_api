@@ -2,11 +2,13 @@ package com.example.springboot_api.service.impl;
 
 import com.example.springboot_api.entity.Employee;
 import com.example.springboot_api.repository.EmployeeRepository;
+
 import com.example.springboot_api.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     EmployeeRepository employeeRepository;
